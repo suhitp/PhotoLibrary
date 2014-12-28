@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		74E3C5931A4FCDC000DE49E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3C5921A4FCDC000DE49E8 /* main.m */; };
 		74E3C5961A4FCDC000DE49E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3C5951A4FCDC000DE49E8 /* AppDelegate.m */; };
-		74E3C5991A4FCDC000DE49E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3C5981A4FCDC000DE49E8 /* ViewController.m */; };
+		74E3C5991A4FCDC000DE49E8 /* SPImageSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3C5981A4FCDC000DE49E8 /* SPImageSearchViewController.m */; };
 		74E3C59C1A4FCDC000DE49E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E3C59A1A4FCDC000DE49E8 /* Main.storyboard */; };
 		74E3C59E1A4FCDC000DE49E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E3C59D1A4FCDC000DE49E8 /* Images.xcassets */; };
 		74E3C5A11A4FCDC000DE49E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E3C59F1A4FCDC000DE49E8 /* LaunchScreen.xib */; };
 		74E3C5AD1A4FCDC000DE49E8 /* PhotoLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3C5AC1A4FCDC000DE49E8 /* PhotoLibraryTests.m */; };
+		74E3C5B81A4FDBA300DE49E8 /* ImageSearchAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3C5B71A4FDBA300DE49E8 /* ImageSearchAPIClient.m */; };
+		74E3C5BB1A4FDBE800DE49E8 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3C5BA1A4FDBE800DE49E8 /* Image.m */; };
+		74E3C5BE1A5024BC00DE49E8 /* SPImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3C5BD1A5024BC00DE49E8 /* SPImageDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,20 @@
 		74E3C5921A4FCDC000DE49E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74E3C5941A4FCDC000DE49E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74E3C5951A4FCDC000DE49E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74E3C5971A4FCDC000DE49E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		74E3C5981A4FCDC000DE49E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		74E3C5971A4FCDC000DE49E8 /* SPImageSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPImageSearchViewController.h; sourceTree = "<group>"; };
+		74E3C5981A4FCDC000DE49E8 /* SPImageSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPImageSearchViewController.m; sourceTree = "<group>"; };
 		74E3C59B1A4FCDC000DE49E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74E3C59D1A4FCDC000DE49E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74E3C5A01A4FCDC000DE49E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		74E3C5A61A4FCDC000DE49E8 /* PhotoLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E3C5AB1A4FCDC000DE49E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E3C5AC1A4FCDC000DE49E8 /* PhotoLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryTests.m; sourceTree = "<group>"; };
+		74E3C5B61A4FDBA300DE49E8 /* ImageSearchAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSearchAPIClient.h; sourceTree = "<group>"; };
+		74E3C5B71A4FDBA300DE49E8 /* ImageSearchAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSearchAPIClient.m; sourceTree = "<group>"; };
+		74E3C5B91A4FDBE800DE49E8 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		74E3C5BA1A4FDBE800DE49E8 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		74E3C5BC1A5024BC00DE49E8 /* SPImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPImageDetailViewController.h; sourceTree = "<group>"; };
+		74E3C5BD1A5024BC00DE49E8 /* SPImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPImageDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +92,9 @@
 			children = (
 				74E3C5941A4FCDC000DE49E8 /* AppDelegate.h */,
 				74E3C5951A4FCDC000DE49E8 /* AppDelegate.m */,
-				74E3C5971A4FCDC000DE49E8 /* ViewController.h */,
-				74E3C5981A4FCDC000DE49E8 /* ViewController.m */,
 				74E3C59A1A4FCDC000DE49E8 /* Main.storyboard */,
+				74E3C5C31A503E2000DE49E8 /* Model */,
+				74E3C5C21A503E1600DE49E8 /* Controller */,
 				74E3C59D1A4FCDC000DE49E8 /* Images.xcassets */,
 				74E3C59F1A4FCDC000DE49E8 /* LaunchScreen.xib */,
 				74E3C5901A4FCDC000DE49E8 /* Supporting Files */,
@@ -117,6 +126,28 @@
 				74E3C5AB1A4FCDC000DE49E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74E3C5C21A503E1600DE49E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74E3C5971A4FCDC000DE49E8 /* SPImageSearchViewController.h */,
+				74E3C5981A4FCDC000DE49E8 /* SPImageSearchViewController.m */,
+				74E3C5BC1A5024BC00DE49E8 /* SPImageDetailViewController.h */,
+				74E3C5BD1A5024BC00DE49E8 /* SPImageDetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		74E3C5C31A503E2000DE49E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74E3C5B61A4FDBA300DE49E8 /* ImageSearchAPIClient.h */,
+				74E3C5B71A4FDBA300DE49E8 /* ImageSearchAPIClient.m */,
+				74E3C5B91A4FDBE800DE49E8 /* Image.h */,
+				74E3C5BA1A4FDBE800DE49E8 /* Image.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E3C5991A4FCDC000DE49E8 /* ViewController.m in Sources */,
+				74E3C5991A4FCDC000DE49E8 /* SPImageSearchViewController.m in Sources */,
 				74E3C5961A4FCDC000DE49E8 /* AppDelegate.m in Sources */,
+				74E3C5B81A4FDBA300DE49E8 /* ImageSearchAPIClient.m in Sources */,
 				74E3C5931A4FCDC000DE49E8 /* main.m in Sources */,
+				74E3C5BE1A5024BC00DE49E8 /* SPImageDetailViewController.m in Sources */,
+				74E3C5BB1A4FDBE800DE49E8 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
