@@ -89,6 +89,37 @@ static NSString* const kImageCell = @"imageCell";
     }];
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize size;
+    if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPhone)
+    {
+        if ([[UIScreen mainScreen] bounds].size.height == 736.0f) {
+             size = CGSizeMake(125.0f, 125.0f); //iPhone 6+
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 667.0f)
+        {
+            size = CGSizeMake(176.0f, 176.0f);  //iPhone 6
+            
+        }
+        else if ([[UIScreen mainScreen] bounds].size.height == 568.0f)
+        {
+            size = CGSizeMake(150.0f, 150.0f);  //iPhone 5,5s
+            
+        }
+        else
+        {
+             size = CGSizeMake(148.0f, 148.0f); //iPhone 4s
+        }
+    }
+    else
+    {
+        //iPad
+        size = CGSizeMake(190.0f, 190.0f);
+    }
+    return size;
+}
+
 #pragma mark - SearchBar Delegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
@@ -122,12 +153,13 @@ static NSString* const kImageCell = @"imageCell";
             [self.collectionView reloadData];
         });
         
-        
     } errorBlock:^(NSError *error) {
         NSLog(@"Error fetching images = %@", error);
     }];
 
 }
+
+#pragma mark - prepareForSegue
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqual:@"imageDetailsSegue"]) {
